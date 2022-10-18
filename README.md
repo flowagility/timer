@@ -1,5 +1,7 @@
 # FlowAgility Timer Integration (v.1.0.0)
 
+The following document describing the message formats and protocal for message exchange between the timer and FlowAgility platform. If you want your timer to be supported by FlowAgility and want to test it or having any questions or doubts, please contact us at info@flowagility.com
+
 ## Contents
 - [General concept](#general-concept)
 - [Connecting Timer and Platform](#connecting-timer-and-platform)
@@ -9,7 +11,7 @@
 - [Timer to Platform Communication](#timer-to-platform-communication)
 
 ## General concept
-FlowAgility platform is supporting timer integration in an experimental mode at the moment. Communication is supported based mainly on 11 symbols codes with few exceptions. Timer is connecting to the platform automatically, sending its unique Mac Address. Platform is openning a communication channel for a specific Ring and Date. Further commincation is done via web socket. Platform is sending an information on Faults, Refusals and Eliminations, while timer is sending the message when dog is crossing an entrance gates and also the exit gates. Platform can also initiate a Course Walk countdown. Platform can reset timer at any moment. Any doubts just contact us at info@flowagility.com
+FlowAgility platform is supporting timer integration in an experimental mode at the moment. Communication is supported based mainly on 11 symbols codes with few exceptions. Timer is connecting to the platform automatically, sending its unique Mac Address. Platform is openning a communication channel for a specific Ring and Date. Further commincation is done via web socket. Platform is sending an information on Faults, Refusals and Eliminations, while timer is sending the message when dog is crossing an entrance gates and also the exit gates. Platform can also initiate a Course Walk countdown. Platform can reset timer at any moment.
 
 ## Connecting Timer and Platform
 To connect the timer to a platform, the platform should be set into a listening mode, by providing the Mac Address of a timer. This can be done inside of the run views. After the timer Mac Address is entered, the platform is waiting for the timer to connect. Timer should then initiate connection to a specific URL (https://flowagility.com/ws/timer/mac_address - where mac_address is a Mac Address of the timer). Timer should try to connect to the platform with series of 5, 10, 30 and 60 seconds intervals (3-5 attempts in a series).
