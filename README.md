@@ -6,7 +6,7 @@ The following document describing the message formats and protocal for message e
 - [General concept](#general-concept)
 - [Connecting Timer and Platform](#connecting-timer-and-platform)
 - [Keeping Connection Alive](#keeping-connection-alive)
-- [xxx](#xxx)
+- [11(+1) Symbols Message Format](##111-symbols-message-format)
 - [Platform to Timer Communication](#platform-to-timer-communication)
 - [Timer to Platform Communication](#timer-to-platform-communication)
 
