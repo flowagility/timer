@@ -48,8 +48,8 @@ Digital codes are the following
 Example:
 ```text
 i2100036597
-  ││││└──┬──┘
-  ││││   └────> 36597 milliseconds
+  ││││└─┬─┘
+  ││││  └─────> 36597 milliseconds
   │││└────────> not eliminated
   ││└─────────> 1 refusal
   │└──────────> 2 faults
