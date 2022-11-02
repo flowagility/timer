@@ -62,7 +62,7 @@ When platform is sending information about faults, refusals of eliminations, tim
 
 ## Platform to Timer Communication
 The following commands are send by the platform:
-  - `d0` - status request. Response should be pre-pended by `#` symbol. For example, if the timer is running, then response shouold be `#i2100036597`
+  - `d0` - status request. Response should be pre-pended by `#` symbol. For example, if the timer is running, then response should be `#i2100036597`
   - `i1000000000` - reporting 1st fault while timer is running (timer should be ignored by the timer)
   - `i2000000000` - reporting 2nd fault while timer is running
   - `i0100000000` - reporting 1st refusal while timer is running
