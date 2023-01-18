@@ -38,6 +38,7 @@ Alpha codes are the following:
   - `i` - timer running with F+R+E information
   - `o` - stop of a Course Walk
   - `p` - timer stopped with F+R+E information
+  - `l` - request for the run length
  
 Digital codes are the following
   - 1 digit - Numebr of Faults (0..9)
@@ -68,9 +69,10 @@ The following commands are send by the platform:
   - `i0100000000` - reporting 1st refusal while timer is running
   - `i0200000000` - reporting 2nd refusal while timer is running
   - `i0010000000` - reporting elimination (pure elimination or elimination by Refusals or Elimination by MCT)
-  - `o000420000` - setting or pausing the Course Walk time (default is 7 minutes)
-  - `g000420000` - starting ot resuming the Course Walk time 
-  - `p000000000` - timer reset
+  - `o0004200000` - setting or pausing the Course Walk time (default is 7 minutes)
+  - `g0004200000` - starting ot resuming the Course Walk time 
+  - `p0000000000` - timer reset
+  - `l0000221000` - length of current run in millimetres
   - `A.B.C` - version response of the platform, where A is the major, B minor, C revision of the current version of the cupported API.
   - `pong` - response to `ping` command from Timer
 
@@ -80,6 +82,7 @@ The following commands are send by the timer:
   - `i0000000000` - timer start
   - `#i2100036597` - response with infromation shown on the running timer at the moment of the request
   - `p2100036597` - timer stoped with 2 faults, 1 refusals, not eliminated and with 36.597 seconds
+  - `l0000000000` - request for the length of the current run
   - `version` - request for an API version
   - `ping` - ping message to a platform, that should receive `pong` as a response
   
