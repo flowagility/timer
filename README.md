@@ -73,6 +73,7 @@ The following commands are send by the platform:
   - `g0004200000` - starting ot resuming the Course Walk time 
   - `p0000000000` - timer reset
   - `l0000221000` - length of current run in millimetres (e.g. 221000 mm = 221 m)
+  - `l0000000000` - current run length is not set
   - `A.B.C` - version response of the platform, where A is the major, B minor, C revision of the current version of the cupported API.
   - `pong` - response to `ping` command from Timer
 
