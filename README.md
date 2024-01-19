@@ -41,7 +41,7 @@ Alpha codes are the following:
   - `l` - request for the run length
  
 Digital codes are the following
-  - 1 digit - Numebr of Faults (0..9)
+  - 1 digit - Number of Faults (0..9)
   - 2 digit - Number of Refusals (0..9)
   - 3 digit - No elimination is `0`. Eliminated is `1`
   - 7 digits: elapsed millisecond (so max elapsed will be 9999 secs)
